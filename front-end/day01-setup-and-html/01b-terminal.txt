@@ -1,0 +1,24 @@
+
+- Everyone open Terminal or Git for Windows.
+- What is the Terminal?
+
+Mac users only
+- Let's change the look.
+	- Terminal
+	- Preferences
+	- Choose "Pro"
+	- Click "Default"
+	- Quit and relaunch
+
+Commands to remember
+	- ls = list items 
+	- cd = change directory
+	- pwd = present working directory
+	- .. = parent directory (one directory outside your pwd)
+	- mkdir = create folder
+	- touch = create file
+	- / = root directory
+	- ~ = home directory
+	- rm = delete file
+	- rm -rf = delete folder
+	- mv = move/rename file or folder

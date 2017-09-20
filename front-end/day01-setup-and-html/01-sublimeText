@@ -1,0 +1,21 @@
+What is a text editor?
+
+What is an IDE?
+
+Multiple cursors
+	- Vertical selector
+	- Selecting multiple instances of the same text
+	- Find every instance of the word "yup" in the phrase:
+		"Yup, I think I'm going to enjoy this class. Yup, it'll definitely cover a lot. And yup,
+		it won't be easy."
+
+		- Select one at a time
+			"command + d" on Mac - "ctrl + d" on Windows
+		- Select all
+			"control + command + g" on Mac - "Alt + F3" on Windows
+
+Sidebar to scroll
+
+Adjust size
+	command + or command -
+

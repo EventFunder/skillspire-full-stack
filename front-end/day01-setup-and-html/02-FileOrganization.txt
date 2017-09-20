@@ -1,0 +1,8 @@
+How to organize files
+
+- Open terminal
+- cd ~
+- Create a folder called "Repositories"
+- Create another folder - Repositories/Skillspire-full-stack
+- Create a new folder for each Day and topic 
+	- For example: Day01-setup-html, Day02-css, Day03-JS-basics, etc
