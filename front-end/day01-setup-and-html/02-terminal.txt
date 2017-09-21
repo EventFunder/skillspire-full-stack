@@ -1,14 +1,7 @@
-
-- Everyone open Terminal or Git for Windows.
-- What is the Terminal?
-
-Mac users only
-- Let's change the look.
-	- Terminal
-	- Preferences
-	- Choose "Pro"
-	- Click "Default"
-	- Quit and relaunch
+What is the Terminal?
+- Terminal allows you to interface directly with operating system (OS).
+- It's faster than using the Graphic User Interface (GUI).
+- The language the terminal uses is called Bash
 
 Commands to remember
 	- ls = list items 
