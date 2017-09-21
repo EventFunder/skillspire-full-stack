@@ -1,0 +1,7 @@
+Setting up your dev environment
+
+- Create account in GitHub
+- Create account in Slack
+- Create account in Canvas
+- Windows users install Git Bash
+- Learn Bash and how to use the command line

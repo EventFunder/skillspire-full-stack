@@ -1,0 +1,6 @@
+How to organize files
+
+- Create a folder called "Repositories" in your home directory
+	- mkdir ~/Repositories
+- Create another folder - Repositories/day01-setup-html
+- Create a new file - first-website.html
