@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Colors and Font-Family</title>
+</head>
+
+<body>
+
+	<!-- At this point we're done creating just HTML. Time to add CSS!  One way is to simply add attributes within the HTML file. Attributes give information about an HTML element. One example of an attribute is the "style" attribute. -->
+
+
+
+	<h1 style="font-family: Verdana">Learning Attributes: Colors and Font-Family</h1>
+
+	<!-- Change colors -->
+	<p style="color: red">This paragraph will be red.</p>
+	<p style="color: blue">This paragraph will be blue.</p>
+	<p style="color: green">This paragraph will be green.</p>
+
+	<!-- Change colors with hexadecimal values -->
+
+	<p style="color: #b30000">This paragraph will be dark red.</p>
+	<p style="color: #66a3ff">This paragraph will be light blue.</p>
+	<p style="color: #004d00">This paragraph will be very dark green.</p>
+
+	<!-- Change font style -->
+
+	<p>This is a normal paragraph</p>
+	<p style="font-family: comic sans ms">This paragraph is comical!</p>
+	<p style="font-family: sans-serif">This is a bold statement.</p>
+	<p style="font-family: cursive">This paragraph has serious style.</p>
+
+
+	<h1>Specificity!!</h1>
+
+	<!-- SPECIFICITY: When you have multiple attributes affecting the same element, the more specific element will override the less specific attribute -->
+
+	<ul style="color: purple">
+		<li>This item will be purple.</li>
+		<li style="color: green">Because this attribute is specifically targeting a list item, this will be green.</li>
+		<li>This item will be purple.</li>
+		<li>This item will be purple.</li>
+	</ul>
+
+</body>
+
+</html>
+
+<!-- 
+- Create 2 paragraphs with different named colors
+- Create 2 paragraphs with different hexadecimal colors. Google "HTML hex colors" to find more colors
+- Create 2 paragraphs with different font-families
+- Create an example of specificity. Create a list or table specifying a style for the entire element.  Create an additional attribute for a specific element within that table or list.
+ -->
