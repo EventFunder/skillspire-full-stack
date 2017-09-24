@@ -1,6 +1,5 @@
 This repository contains the code I have created to teach a full-stack course at Skillspire. 
-The code and the curriculum are my own, however, anyone may use it and/or modify it as they 
-please without asking for my permission.
+The code and the curriculum are my own.
 
 To my students, whatever code you write in class is your own and belongs to you regardless 
 of whether - or how much - of my code you use. 
