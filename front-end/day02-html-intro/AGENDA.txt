@@ -1,0 +1,4 @@
+- Test
+- Intro to HTML
+- Continue learning how to use Bash in terminal
+- Summary of the interview process

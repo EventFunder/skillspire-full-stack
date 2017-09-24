@@ -1,0 +1,13 @@
+-What is Hypertext Markup Language
+
+- <!DOCTYPE html>
+
+- HTML5
+
+- Parts of an HTML element
+
+- Describing the purpose of HTML, CSS, and JavaScript
+
+	HTML = bones/structure
+	CSS = Style
+	JS = Functionality
