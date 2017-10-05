@@ -16,11 +16,21 @@ What is JavaScript?
 
 
 JS has 6 data types
-	- numbers
-	- strings
-	- Booleans
-	- objects
-	- functions
-	- undefined
+	1) numbers
+	2) strings
+	3) Booleans
+	4) objects
+	5) functions
+	6) undefined
 
-	In this lesson we will cover numbers, strings, booleans, and functions
+
+Technical career paths
+
+SDET - (Software Design Engineer in Test) write code to test features.They have to be
+       good at both coding and testing.
+
+SDE - Software Design Engineer
+
+Product (and Program) Management - these roles vary. Generally are at least partially
+                                   client facing. Sometimes also involve coding.
+
