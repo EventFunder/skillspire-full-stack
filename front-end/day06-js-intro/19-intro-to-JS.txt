@@ -1,0 +1,26 @@
+JavaScript lesson structure:
+
+-In order to understand web development, it is essential to understand the basic principles of programming.
+
+
+What is a program?
+
+-"A list of computer instructions that tell a computer what to do."
+
+
+What is JavaScript?
+
+- The language was introduced in 1995 and used to create programs in Netscape (Netscape was a browser similar to Google Chrome and Internet Explorer).
+
+- Not to be confused with Java.  JavaScript has almost nothing to do with Java except that they're both programming languages.
+
+
+JS has 6 data types
+	- numbers
+	- strings
+	- Booleans
+	- objects
+	- functions
+	- undefined
+
+	In this lesson we will cover numbers, strings, booleans, and functions
