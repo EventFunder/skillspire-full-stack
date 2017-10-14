@@ -16,10 +16,3 @@ prompt('Enter your age.'); // This function creates a pop-up asking the user for
 // You can assign user feedback to variables.
 
 var username = prompt('Enter your name.');
-
-
-// ASSIGNMENT
-// 1. Prompt the user for their age and assign it to a variable.
-// 2. Now check the typeof the variable.
-// 3. Ask the user to confirm whether they accept the Terms of Agreement - save this in a variable.
-// 4. Check the typeof.

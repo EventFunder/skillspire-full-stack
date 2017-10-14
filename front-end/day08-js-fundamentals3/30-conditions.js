@@ -1,3 +1,4 @@
+'use strict';
 // Conditional execution allows certain code statements to be executed only under certain conditions.
 
 
@@ -19,16 +20,6 @@ if (userAge >= 13) {
 } else {
 	console.log('This game is too violent for you!')
 }
-
-// ASSIGNMENT
-// Create a program to stop someone with the wrong name from accessing a computer.
-// Prompt a user for their name.  If the user's name is equal to yours, console.log() a
-// response welcoming them.  Otherwise, tell them to go away.
-
-
-
-
-
 
 
 // We've covered 'if' statements and 'if-else' statements for when you want
@@ -52,12 +43,3 @@ else if (userAge >= 13) {
 else {
 	alert('Your input must be a number');
 };
-
-
-
-
-// ASSIGNMENT 
-/* Imagine you have a website that only two accounts can access. Only people with the username 
-   'batman' or 'robin' can enter. Create in if-else-if condition that allows users to enter only
-   if they have one of these names. Otherwise it should tell them they don't have access.
-*/
