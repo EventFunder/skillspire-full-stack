@@ -15,3 +15,5 @@ if (userGuess == randomNum) {
 } else {
 	console.log('Wrong. The correct answer is ' + randomNum);
 };
+
+
