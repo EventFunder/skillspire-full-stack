@@ -1,11 +1,10 @@
+'use strict';
 // An array is a list of data.
 // An array is not a data type. It is simply a way to organize data.
 
 
 var contactList = ['Jon Snow', 'Arya', 'Cirsi', 'Tyrian', 'Greyworm'];
-
 var nums = [3, 2, 6, 4];
-
 var mixedData = ['silly string', 5, 'some string', 2343, undefined, true];
 
 
