@@ -1,4 +1,7 @@
 'use strict';
+
+// Taught by Thomas***
+
 // Scope tells us where a variable is accessible from.
 
 // There are two kinds of scope - global scope and local scope.
