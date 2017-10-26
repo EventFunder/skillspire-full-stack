@@ -1,4 +1,7 @@
 'use strict';
+
+// Taught by Thomas *** Comments by Farhad
+
 /*
 	What is an object in the real world?  A chair, a table, a book. These are objects. In programming, 
 	an object is a collection of properties that are tied to a variable. This is similar to how we
