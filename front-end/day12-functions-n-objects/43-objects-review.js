@@ -22,6 +22,23 @@ var marshawn = {
 }
 
 
+var bruce = {
+	name: 'Bruce Wayne',
+	heightInInches: 74,
+	occupation: 'CEO of Wayne Enterprise',
+	location: 'Wayne Manor, Gotham City'
+}
+
+var clark = {
+	name: 'Clark Kent',
+	heightInInches: 73
+	occupation: 'Reporter',
+	location: 'Metropolis'
+}
+
+
+
+
 // dot notation and bracket notation are used to access properties of objects.
 console.log(marshawn.name); // dot notation
 console.log(marshawn['occupation']); // bracket notation
