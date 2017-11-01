@@ -37,6 +37,5 @@ function pointComparison(arr1, arr2) {
 	}
 }
 
-
-
 // Given an array of numbers, log the largest number.
+// Given an array of numbers, log the smallest number.
