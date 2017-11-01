@@ -1,0 +1,5 @@
+- Review functions
+- Whiteboarding! 
+
+We're going to do a quick review of functions and then we'll spend
+the day whiteboarding functions to prep for technical interviews.
