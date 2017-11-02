@@ -16,9 +16,14 @@ var marshawn = {
 	heightInInches: 71,
 	occupation: 'American football running back',
 	location: 'Seattle',
+	// speak is a "method", which is a function attached to an object.
+	// (this is different from a function -- functions are not attached to objects)
 	speak: function() {
 		console.log('On the field, there\'s no reason why I can\'t run through you.');
 	},
+	// changeLocation is a "method", which is a function attached to an object.
+	// changeLocation has a "parameter" called newLocation which is a placeholder for the argument that's
+	// passed when the method is invoked.
 	changeLocation: function(newLocation) {
 		this.location = newLocation;
 	}
@@ -53,12 +58,12 @@ console.log(marshawn.name); // dot notation
 console.log(marshawn['occupation']); // bracket notation
 
 
-// To access an object's method, dot notation must be used. For this reason, developers rarely use bracket notation
-// since dot notation allows them to keep their code consistent.
+// To invoke an object's method, dot notation must be used. For this reason, developers rarely use bracket notation
+// in general since dot notation allows them to keep their code consistent.
 marshawn.newLocation('San Francisco');
 bruce.speak();
 
 
 // We've already worked with other objects with methods attached to them.
-console.log()
-document.write()
+console.log('hi');
+document.write('sup');
