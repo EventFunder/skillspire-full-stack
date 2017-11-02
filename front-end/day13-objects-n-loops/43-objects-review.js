@@ -5,7 +5,7 @@
 	an object is a collection of properties that are tied to a variable. This is similar to how we
 	define an object in the real world. What is a table? It's a thing with a flat surface, has one or 
 	more legs, and is stable enough that we can place things on it (these are all properties that define 
-	a table).
+	a table). Objects also have functionality that's tied to them.
 */
 
 // An object is a data type just like a string, number, boolean, and function.
@@ -16,9 +16,17 @@ var marshawn = {
 	heightInInches: 71,
 	occupation: 'American football running back',
 	location: 'Seattle',
-	// changeLocation: function(newLocation) {
-	// 	this.location = newLocation;
-	// }
+	// speak is a "method", which is a function attached to an object.
+	// (this is different from a function -- functions are not attached to objects)
+	speak: function() {
+		console.log('On the field, there\'s no reason why I can\'t run through you.');
+	},
+	// changeLocation is a "method", which is a function attached to an object.
+	// changeLocation has a "parameter" called newLocation which is a placeholder for the argument that's
+	// passed when the method is invoked.
+	changeLocation: function(newLocation) {
+		this.location = newLocation;
+	}
 }
 
 
@@ -26,14 +34,20 @@ var bruce = {
 	name: 'Bruce Wayne',
 	heightInInches: 74,
 	occupation: 'CEO of Wayne Enterprise',
-	location: 'Wayne Manor, Gotham City'
+	location: 'Wayne Manor, Gotham City',
+	speak: function() {
+		console.log('Because I\'m Batman!');
+	}
 }
 
 var clark = {
 	name: 'Clark Kent',
-	heightInInches: 73
+	heightInInches: 73,
 	occupation: 'Reporter',
-	location: 'Metropolis'
+	location: 'Metropolis',
+	speak: function() {
+		console.log('The \'Amazing\' can only be created by facing fear, risk, and failure during the process.')
+	}
 }
 
 
@@ -44,11 +58,12 @@ console.log(marshawn.name); // dot notation
 console.log(marshawn['occupation']); // bracket notation
 
 
-// To access an object's method, dot notation must be used. For this reason, developers rarely use bracket notation
-// since dot notation allows them to keep their code consistent.
+// To invoke an object's method, dot notation must be used. For this reason, developers rarely use bracket notation
+// in general since dot notation allows them to keep their code consistent.
 marshawn.newLocation('San Francisco');
+bruce.speak();
 
 
 // We've already worked with other objects with methods attached to them.
-console.log()
-document.write()
+console.log('hi');
+document.write('sup');

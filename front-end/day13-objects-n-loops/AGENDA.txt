@@ -1,0 +1,4 @@
+- Test
+- How to learn new technologies
+- Objects
+- Whiteboarding loops and functions
