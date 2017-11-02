@@ -1,3 +1,8 @@
+'use strict';
+
+// Create a for loop that logs numbers 1-10.
+
+
 // I have an array of numbers. Log the sum of those numbers.
 
 var arr = [1, 2, 3];
@@ -10,7 +15,7 @@ for (var i=0; i<arr.length; i++) {
 
 
 // Jon and Sam are competitive speakers. They're rated in 3 categories: argument strength, clarity, and originality. In each category,
-// they're given a rating of 1-10.
+// they're given a rating of 1-10.  Compare
 
 
 var jonPoints = [3, 5, 9];
