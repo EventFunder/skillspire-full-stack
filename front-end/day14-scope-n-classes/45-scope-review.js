@@ -47,3 +47,17 @@ function globalFunction() {
 
 // This won't work
 localFunction();
+
+
+
+/*
+IN CLASS ASSIGNMENT
+
+Steps:
+1. Create a global variable. 
+2. Create a global function that logs that variable.
+3. Create a function nested inside the previous function.
+4. Inside the nested function, create a variable called local;
+   the value of local should be the string 'local var.'
+5. Log local var to the console.
+*/
