@@ -1,0 +1,18 @@
+body {
+	background-color: #1E90FF;
+	height: 100%;
+}
+div {
+	padding-top: 5%;
+	width: 60%;
+	height: 100vh;
+	background-color: white;
+	margin: auto;
+	text-align: center;
+}
+
+table, th, td {
+	margin: auto;
+	border: 0.1em solid black;
+	width: 50%;
+};
