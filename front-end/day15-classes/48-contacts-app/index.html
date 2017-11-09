@@ -1,42 +1,39 @@
 <!DOCTYPE html>
+
+<!-- 
+Steps to create our app: 
+
+1. Create the HTML
+2. Add id attributes to each element we need to access via JS
+3. Create JS
+4. Add variables for each elemnt we need to access (getElementById)
+5. Add event listener that "listens" for the user to submit the form
+6. Prevent the form from refreshing upon submission
+7. Create an object constructor for Contacts
+8. When user submits form, take input values to create new Contact object
+9. Create an <li> displaying the object's properties.
+-->
+
 <html>
 <head>
-	<title>Contacts App</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Contacts</title>
 </head>
 <body>
-	<div>
+	<h1>Contacts</h1>
 
-		<h1>Contacts App</h1>
+	<form id="new-contact-form">
+		<label>Name</label>
+		<input id="name-input" type="text" required>
+		<label>Number</label>
+		<input id="number-input" type="text">
+		<label>Email</label>
+		<input id="email-input" type="text">
+		<button type="submit">Add Contact</button>
+	</form>
 
-		<form id="new-contact-form">
-			<label>Name</label>
-			<input id="contact-name-input" type="text">
-			<label>Number</label>
-			<input id="contact-number-input" type="text">
-			<label>Email</label>
-			<input id="contact-email-input" type="text">
-			<button type="submit">Add Contact</button>
-		</form>
-	
-		<br>
-		<br>
-	
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Number</th>
-					<th>Email</th>
-				</tr>
-			</thead>
-			<tbody id="contact-table-body">
-			</tbody>
-		</table>		
-
-	</div>
-
-
+	<ul id="contacts-ul">
+	</ul>
+		
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
