@@ -13,7 +13,6 @@ function Contact(name, number, email) {
 	this.email = email;
 }
 
-
  //event listner to perform task when user clicks 'submit' button
  newContactForm.addEventListener('submit', function() {
 
@@ -21,7 +20,6 @@ function Contact(name, number, email) {
 
 	// Create new contact objects
 	var newContact = new Contact(contactNameInput.value, contactNumberInput.value, contactEmailInput.value);
-
 
 	/*
 		Application Logic:
@@ -36,7 +34,6 @@ function Contact(name, number, email) {
 		'<td>' + newContact.number + '</td>' + 
 		'<td>' + newContact.email + '</td>' + 
 	'</tr>';
-
 
 	// Empty input boxes.
 	contactNameInput.value = '';
