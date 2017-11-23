@@ -1,0 +1,10 @@
+git --version - tells you that you have git and what version you have
+
+
+// Configuring global variables
+
+git config --global user.name "Farhad Ahmed" // sets your username for comits
+git conifg --global user.email "farhadahmed2007@gmail.com" // sets your email for comits
+
+git init - initializes a directory as a git repository
+git add - place in staging
