@@ -6,5 +6,18 @@ git --version - tells you that you have git and what version you have
 git config --global user.name "Farhad Ahmed" // sets your username for comits
 git conifg --global user.email "farhadahmed2007@gmail.com" // sets your email for comits
 
-git init - initializes a directory as a git repository
-git add - place in staging
+git init - initializes your pwd as a git repository
+or
+git init some-repo-name - creates a new sub-directory and initializes it as a git repo
+
+git add . - places all changes made to the staging area and lets git know to track these changes
+git commit -m "some message" - commit to staging
+
+git log - shows a history of commits. 
+
+git branch foo-bar -- creates a branch called foo-bar
+or
+git checkout -b foo-bar -- creates a branch called foo-bar and switches to that branch
+
+
+git checkout some-branch -- checks out a branch of this name.
