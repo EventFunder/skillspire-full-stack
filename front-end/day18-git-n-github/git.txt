@@ -1,0 +1,54 @@
+Intro to Git
+
+
+// Check if you have git
+
+1) First let's verify that you have git installed. In terminal, type the following:
+
+   git --version
+
+
+   This will tell you that you have git and what version you have. If you get no response when you type this, you do not thave git installed.
+
+
+// Configuring global variables
+
+2) Set your username and email address.  The first line will set your username and the second will set your email address.
+
+git config --global user.name "Farhad K. Ahmed" 
+git conifg --global user.email "farhadahmed2007@gmail.com"
+
+
+// Create a git repository
+
+3) There are two ways to create a git repository.
+
+	a) Create a folder for your project. Navigate into that folder and type the following to initialize  a git repository:
+
+	
+	git init
+
+
+	b) Navigate to the directory you want to create the folder for your project within.  The following line will create a new directory and also initialize it as a git repository. This line contains the keywords "git" and "init" followed by the name of the folder.
+
+	
+	git init some-directory-name 
+
+
+
+// Commonly used git commands
+
+git add . - places all changes made to the staging area and lets git know to track these changes
+git add [filename] - places changes made to the specified file in the staging area a
+git commit -m "some message" - once changes have been added to staging, use this to record changes to the repository
+
+git status - describes the current status of your repo (i.e., whether changes need to be committed or added to staging)
+
+git log - shows a history of commits. 
+
+git branch foo-bar -- creates a branch called foo-bar
+or
+git checkout -b foo-bar -- creates a branch called foo-bar and switches to that branch
+
+
+git checkout some-branch -- checks out a branch of this name.
