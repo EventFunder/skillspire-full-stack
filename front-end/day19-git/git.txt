@@ -1,0 +1,18 @@
+Agenda
+
+- Add to previous app
+
+	- Pull from origin master
+	- Create a new branch
+	- Add a new feature
+	- Add to staging
+	- Commit
+	- Push to GitHub
+	- Merge branches
+
+- Pull from someone else's repository
+	- Farhad will create a repo for you to clone and add to.
+
+- Whiteboarding
+
+- Typing git in command line will show list of git commands.
