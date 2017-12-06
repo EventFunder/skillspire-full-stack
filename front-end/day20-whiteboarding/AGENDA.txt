@@ -1,0 +1,29 @@
+AGENDA
+
+- Test
+
+- Conclude Git
+	- Students to fork Farhad's repo, create a branch with the student's
+	  name, create an HTML file with the student's name, commit changes,
+	  push to GitHub, and create pull request
+
+- Whiteboarding
+
+
+
+
+Steps to Fork and Push to Repo
+
+1) Clone the repo
+2) Create a new branch with your name
+3) Switch to that branch
+4) Create a file with your name (ex: siraj.html)
+5) add and commit
+6) Git push to the remote repository
+	
+	Example:
+	
+		git push origin siraj
+
+7) Create a pull request
+
