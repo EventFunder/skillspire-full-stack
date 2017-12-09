@@ -1,0 +1,39 @@
+1) npm init
+
+	- Creates a file called package.json which makes it easier to work with other devs
+	  and keep track of dependencies
+
+2) Answer the questions
+
+	- At minimum, needs a name and version
+	- Name must be all lower case, can be separated by dashes or underscores
+	- Change entry point to server.js
+
+3) npm install --save express
+
+	- Express is THE standard server framework for Node.js
+	- --save installs the framework locally as a dependency of the application
+
+4) touch server.js
+
+5) Set up server with a get request that responds with 'Hello, universe!'.
+
+
+
+				var express = require('express');
+				var app = express();
+				var port = process.env.PORT || 3000;
+				
+				app.get('/', function(req, res) {
+					res.send('Hello, universe!');
+				});
+				
+				app.listen(port, function() {
+					console.log('server available at port ' + port);
+				});
+
+6) Create directory called public and inside it create an HTML file
+
+7) Update server.js to use __dirname + 'public'
+
+8) Add an error page for the website.
