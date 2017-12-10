@@ -1,0 +1,14 @@
+{
+  "name": "first-express-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Farhad K. Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
