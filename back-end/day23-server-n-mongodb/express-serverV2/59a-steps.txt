@@ -19,3 +19,14 @@
 5) Set up server with a get request that responds with 'Hello, universe!'.
 
 _________________________
+
+
+6) Create a directory called app
+
+7) Create an HTML file
+
+8) Refactor the server.js file to "use" the HTML file instead of a get request.
+
+9) Add a 404 error HTML page inside your public dir.
+
+10) Add an app.use to the server.js file for the 404 error page.
