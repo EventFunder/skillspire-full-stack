@@ -1,0 +1,22 @@
+Installing MongoDB
+
+	WINDOWS
+		- mongodb.org
+		- Click the "Community Server" tab
+		- Select your OS and click "Download"
+
+
+
+	MAC
+		- Install Homebrew from brew.sh
+		- In terminal type: brew install mondogb
+		- sudo mkdir -p /data/db
+		- Check the user by typing: whoami
+		- Change the owner to yourself by typing: sudo chown [your user name] /data/db
+			- EX: sudo chown farhadahmed /data/db
+
+
+Start Mongo
+	Mac
+		- In a terminal type mongod
+		- Open a new terminal window and type mongo

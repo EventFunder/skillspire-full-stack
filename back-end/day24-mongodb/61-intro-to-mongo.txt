@@ -1,0 +1,44 @@
+Mac users:
+sudo mkdir -p /data/db
+
+Change owner:
+
+whoami
+sudo chown [username] /data/db
+
+- Your MongoDB instance can contain multiple databases
+
+- A db can have 0 or more collections (tables)
+
+- Collection can have 0 or more documents (rows)
+
+- Documents can have 1 or more fields (columns)
+
+
+
+START MONGO
+- mongod in one terminal
+- mongo in a second terminal
+
+
+Common commands
+
+help
+show dbs
+db
+use first_db
+
+
+rickgrimes = {"name": "Rick Grimes", "number": "111-1111", "email": "rgrimes@walkingdead.com", "contactCreationDate": new Date()}
+
+db.first_db.insert(rickgrimes)
+
+db.first_db.find()
+db.first_db.find().pretty()
+
+
+// add field
+
+rickgrimes.city = "Seattle"
+
+db.first_db.update({"name": "Rick Grimes"}, rickgrimes)
