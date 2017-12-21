@@ -29,6 +29,7 @@
 			</tr>
 		</thead>
 		<tbody>
+			<!-- $scope in the controller allows us to access contacts variable and its properties -->
 			<tr ng-repeat="contact in contacts">
 				<td>{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</td>
 				<td>{{contact.number}}</td>
