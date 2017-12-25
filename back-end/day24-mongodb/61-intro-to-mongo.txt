@@ -42,3 +42,8 @@ db.first_db.find().pretty()
 rickgrimes.city = "Seattle"
 
 db.first_db.update({"name": "Rick Grimes"}, rickgrimes)
+
+
+// delete
+
+db.first_db.remove({"name": "Rick Grimes"})

@@ -1,0 +1,180 @@
+1) Add AngularJS
+
+2) Add ng-app="contactsApp" to <html>
+
+3) Update HTML inputs to include firstname, middlename, lastname
+
+4) Add mainController to body
+
+5) Add a script element in HTML to connect controller.js
+
+6) Add a module to controller.js
+
+
+		var contactsApp = angular.module('contactsApp', []);
+
+
+7) Add a controller to controller.js and test whether it works.
+
+
+		contactsApp.controller('mainController', function ($scope, $http) {
+
+			console.log('Sup');
+
+		});
+
+8) Create test contacts in controller.js to place into the HTML table
+
+
+		var negan = {
+			firstName: 'Negan',
+			middleName: '',
+			lastName: '',
+			number: '111-1111'
+			email: 'negan@yoursavior.com'
+		}
+
+		var batman = {
+			firstName: 'Bruce',
+			middleName: '',
+			lastName: 'Wayne',
+			number: '222-2222',
+			email: 'bwayne@wayneenterprise.com'
+		}
+
+
+		var contacts = [negan, batman];
+
+
+9) Make the contacts variable available in HTML
+
+
+		$scope.contacts = contacts;
+
+
+10) In <tbody>, add a <tr> with the attribute ng-repeat="contact in contacts"
+
+
+		<tr ng-repeat="contact in contacts"></tr>
+
+
+11) Add 3 <td> elements and use data binding for the contact name, number, and email 
+
+
+		<tr ng-repeat="contact in contacts">
+			<td>{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</td>
+			<td>{{contact.number}}</td>
+			<td>{{contact.email}}</td>
+		</tr>
+
+
+12) At the beginning of controller.js, create the route from which you'll GET the contacts data
+
+
+		$http.get('/contacts');
+
+
+13) Add a response in server.js (after app.use) for GET requests sent to /contacts
+
+
+		app.get('/contacts', function (request, response) {
+			console.log('GET request received on server.');
+		});
+
+
+14) Move the test data from the controller into the server and retrieve it from the server
+
+		14a) Cut the objects and the contacts variable
+		14b) Delete the $scope.contacts=contacts; line
+		14c) Paste the objects and the contacts variable in the get request of server.js
+
+
+				app.get('/contacts', function (request, response) {
+					console.log('GET request received on server.');
+				
+					var negan = {
+						firstName: 'Negan',
+						middleName: '',
+						lastName: '',
+						number: '111-1111',
+						email: 'negan@yoursavior.com'
+					}
+				
+					var batman = {
+						firstName: 'Bruce',
+						middleName: '',
+						lastName: 'Wayne',
+						number: '222-2222',
+						email: 'bwayne@wayneenterprise.com'
+					}
+				
+					var contacts = [negan, batman];
+				});
+
+
+		14d) Under the contacts variable add a line to respond with contacts
+
+
+				response.json(contacts);
+
+
+
+15) In controller.js's get request, grab the response from the server and put it in the table.  
+	To do this, we'll just add a function and assign the value of the response to the variable 
+	contacts.
+
+
+		// Retrieve contact data from server. '/contacts' is the route that we'll get the data from.
+		$http.get('/contacts').then(function (response) {
+			// $scope allows us to use this contacts variable in the html file and loads the data into browser.
+			$scope.contacts = response.data;
+			console.log('Client-side received the data requested from the server');
+		});
+
+
+
+16) Add test data to MongoDB
+
+		16a) Start Mongo
+
+		16b) Create a db called contactsdb
+
+				use contactsdb
+
+		16c) Insert test data
+
+				negan = {"firstName": "Negan", "middleName": "", "lastName": "", "number": "111-1111", "email": "negan@thesavior.com"}
+
+				tyrion = {"firstName": "Tyrion", "middleName": "", "lastName": "Lanister", "number": "222-2222", "email": "drinkingandknowing@got.com"}
+
+				db.contactsdb.insert(negan);
+				db.contactsdb.insert(tyrion);
+
+
+17) Connect server to the db
+
+		17a) Install mongojs
+
+
+				npm install --save mongojs
+
+
+		17b) In server.js, require mongojs under the app variable
+
+
+				var express = require('express');
+				var app = express();
+				var mongojs = require('mongojs');
+
+
+		17c) Create a variable called db and assign it the value of the db and collection to use
+
+
+				var db = mongojs('contactsdbforrepo', ['contactsdbforrepo']);
+
+
+		17d) Delete the test objects, the contacts variable, and the response.json() from the server.
+
+		17e) In the GET request in server.js, access the db and just log the db documents to the console.
+
+		
