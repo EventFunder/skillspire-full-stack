@@ -350,4 +350,21 @@ DELETE CALL
 
 
 
-27) 
+27) In the <tr> add another <td> for the delete button for each contact
+
+		<tr ng-repeat="contact in contacts">
+			<td>{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</td>
+			<td>{{contact.number}}</td>
+			<td>{{contact.email}}</td>
+			<td><button ng-click="deleteContact(contact._id)">Delete</button></td>
+		</tr>
+
+
+28) Create a remove controller under the postContact controller that just logs the ID
+
+		$scope.deleteContact = function(id) {
+			console.log(id);
+		}
+
+
+29) Send the contact to be deleted to the server

@@ -33,4 +33,8 @@ contactsApp.controller('mainController', function ($scope, $http) {
 		});
 	}
 
+	$scope.deleteContact = function(id) {
+		console.log(id);
+	}
+
 });
