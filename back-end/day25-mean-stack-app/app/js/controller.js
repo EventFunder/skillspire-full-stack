@@ -2,7 +2,6 @@
 // HTML document. They also provide access to Angular.js features.
 var contactsApp = angular.module('contactsApp', []);
 
-
 contactsApp.controller('mainController', function ($scope, $http) {
 
 	function clearInputs() {
@@ -31,10 +30,6 @@ contactsApp.controller('mainController', function ($scope, $http) {
 			getContacts();
 			clearInputs();
 		});
-	}
-
-	$scope.deleteContact = function(id) {
-		console.log(id);
 	}
 
 });
