@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html ng-app="contactsApp">
+<head>
+	<title>Contacts</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+</head>
+<body ng-controller="mainController">
+	<h1>Contacts App</h1>
+
+	<form>
+		<input ng-model="contact.firstName" id="first-name-input" placeholder="first name" required>
+		<input ng-model="contact.middleName" id="middle-name-input" placeholder="middle name">
+		<input ng-model="contact.lastName" id="last-name-input" placeholder="last name">
+		<input ng-model="contact.number" id="number-input" placeholder="number">
+		<input ng-model="contact.email" id="email-input" placeholder="email">
+		<button ng-click="postContact()">Add Contact</button>
+		<button ng-click="putContact()">Update</button>
+	</form>
+
+	<br>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Number</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- $scope in the controller allows us to access contacts variable and its properties -->
+			<tr ng-repeat="contact in contacts">
+				<td>{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</td>
+				<td>{{contact.number}}</td>
+				<td>{{contact.email}}</td>
+				<td><button ng-click="deleteContact(contact._id)">Delete</button></td>
+				<td><button ng-click="edit(contact._id)">Edit</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script type="text/javascript" src="js/controller.js"></script>
+</body>
+</html>
