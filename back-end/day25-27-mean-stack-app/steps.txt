@@ -527,3 +527,45 @@ PUT Call
 				//console.log(response.data);
 			});
 		}
+
+
+40) Define the putContact() function in controller.js and just log the contact's id.
+
+
+		$scope.putContact = function() {
+			console.log($scope.contact._id);
+		}
+
+
+41) In controller.js send the put request to the server
+
+
+		$scope.putContact = function() {
+			//console.log($scope.contact._id);
+			$http.put('/contacts/' + $scope.contact._id, $scope.contact);
+		}
+
+
+42) In server.js create an endpoint for the put request and log the first name to console
+
+
+		app.put('/contacts/:id', function (request, response) {
+			var id = request.params.id;
+			console.log(request.body.firstName);
+		});
+
+
+43) In server.js, send update to db and respond to controller
+
+
+		app.put('/contacts/:id', function (request, response) {
+			var id = request.params.id;
+			console.log(request.body.firstName);
+			db.contactsdbforrepo.findAndModify({query: {_id: mongojs.ObjectId(id)},
+				update: {$set: {firstName: request.body.firstName, middleName: request.body.middleName, lastName: request.body.lastName, number: request.body.number, email: request.body.email}},
+				new: true}, function (error, document) {
+					response.json(document);
+				});
+		});
+
+

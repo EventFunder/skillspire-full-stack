@@ -46,4 +46,12 @@ contactsApp.controller('mainController', function ($scope, $http) {
 		});
 	}
 
+	$scope.putContact = function() {
+		//console.log($scope.contact._id);
+		$http.put('/contacts/' + $scope.contact._id, $scope.contact).then(function (response) {
+			getContacts();
+			clearInputs();
+		})
+	}
+
 });

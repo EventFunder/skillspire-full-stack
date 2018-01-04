@@ -43,6 +43,16 @@ app.get('/contacts/:id', function (request, response) {
 	});
 });
 
+app.put('/contacts/:id', function (request, response) {
+	var id = request.params.id;
+	console.log(request.body.firstName);
+	db.contactsdbforrepo.findAndModify({query: {_id: mongojs.ObjectId(id)},
+		update: {$set: {firstName: request.body.firstName, middleName: request.body.middleName, lastName: request.body.lastName, number: request.body.number, email: request.body.email}},
+		new: true}, function (error, document) {
+			response.json(document);
+		});
+});
+
 app.listen(port, function() {
 	console.log('server starting on port ' + port);
 }); 
