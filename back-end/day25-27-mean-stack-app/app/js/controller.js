@@ -25,11 +25,33 @@ contactsApp.controller('mainController', function ($scope, $http) {
 	$scope.postContact = function() {
 		console.log($scope.contact);
 		$http.post('/contacts', $scope.contact).then(function (response) {
-			console.log(response.data);
 
 			getContacts();
 			clearInputs();
 		});
+	}
+
+	$scope.deleteContact = function(id) {
+		console.log(id);
+		$http.delete('/contacts/' + id).then(function (response) {
+			getContacts();
+		});
+	}
+
+	$scope.edit = function(id) {
+		//console.log(id);
+		$http.get('/contacts/' + id).then(function (response) {
+			$scope.contact = response.data;
+			//console.log(response.data);
+		});
+	}
+
+	$scope.putContact = function() {
+		//console.log($scope.contact._id);
+		$http.put('/contacts/' + $scope.contact._id, $scope.contact).then(function (response) {
+			getContacts();
+			clearInputs();
+		})
 	}
 
 });

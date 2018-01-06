@@ -16,6 +16,7 @@
 		<input ng-model="contact.number" id="number-input" placeholder="number">
 		<input ng-model="contact.email" id="email-input" placeholder="email">
 		<button ng-click="postContact()">Add Contact</button>
+		<button ng-click="putContact()">Update</button>
 	</form>
 
 	<br>
@@ -34,6 +35,8 @@
 				<td>{{contact.firstName}} {{contact.middleName}} {{contact.lastName}}</td>
 				<td>{{contact.number}}</td>
 				<td>{{contact.email}}</td>
+				<td><button ng-click="deleteContact(contact._id)">Delete</button></td>
+				<td><button ng-click="edit(contact._id)">Edit</button></td>
 			</tr>
 		</tbody>
 	</table>
