@@ -1,0 +1,32 @@
+Step 1) Create a LinkedIn profile
+
+	- Summary
+		- What qualities do you have that make you a desirable employee?
+		- Present yourself as someone who is passionate about coding.
+
+Step 2) Have a clean GitHub profile
+
+	- At least 3 repositories with clean code
+
+Step 3) Build 2 or moreresume templates; one for software development, and one for another
+		job title you're interested in.
+
+		Some opportunities you should look at:
+
+		a) Software Developer
+		b) Project Management
+		c) Product Management
+		d) Technical Support
+
+Step 4) Hunt
+
+	a) contacts
+		- friends
+		- family
+		- coworkers
+		- recruiters
+
+	b) craigslist
+	c) indeed
+	d) elance
+
