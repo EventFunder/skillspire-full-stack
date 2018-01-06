@@ -1,33 +1,24 @@
 /*
 Create a function that takes two numbers as parameters and returns the lesser number
+multiplied by two.
 */
 
 /*
-Create a function that takes an array of numbers and logs each number
+Create a function that takes an array of numbers and logs each number except the last.
 */
 
 /*
-Create a function that takes an array of numbers and logs the lowest number
+Create a function that takes a string and splits it into an array of characters.
 */
 
 /*
-Create a function that takes a string and turns it into an array
+Create a function that takes an array of string characters and concatenates them into
+a single string.
 */
 
-/*
-Check if string is palendrome
-*/
+
 
 /*
-Create a function that takes a contact object and checks if the contact has a first name.
-*/
-
-/*
-Create a function that takes a name and returns "Welcome" if the name is either
-'Bruce' or 'Rick'
-*/
-
-/*
-Create a function that takes a first and last name and returns "Welcome" if the first
-name is Rick and the last name is Grimes.
+Create a function that takes a contact object as an argument and returns true if the
+contact has a first name. Otherwise, return false.
 */
